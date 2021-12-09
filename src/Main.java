@@ -11,7 +11,7 @@ public class Main {
 		
 		electionStats.createState(2000, 2020, 20);
 		electionStats.createState(3000, 1500, 25);
-		electionStats.createState(1500, 2000, 30);
+		electionStats.createState(2500, 2000, 30);
 		electionStats.createState(3000, 2000, 40);
 		electionStats.createState(500, 2500, 50);
 		
