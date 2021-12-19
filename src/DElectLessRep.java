@@ -5,7 +5,7 @@ public class DElectLessRep implements ElectoralVoteReporter{
 	public int[] report(ArrayList<State> states) {
 		int[] votes = new int[2];
 		
-		for(int i = 0; i<5; i++) {
+		for(int i = 0; i<states.size(); i++) {
 			int spareRepVotes = (int)Math.ceil((states.get(i).getRepVotes())*.02);
 			int repVotes = states.get(i).getRepVotes() - spareRepVotes;
 			int demVotes = states.get(i).getDemVotes() + spareRepVotes;

@@ -6,7 +6,7 @@ public class RElectSplitLowestDem implements ElectoralVoteReporter{
 		int[] votes = new int[2];
 		int lowestDemLead = lowestDemLead(states);
 		
-		for(int i = 0; i< 5; i++) {
+		for(int i = 0; i< states.size(); i++) {
 			if(i != lowestDemLead) {
 				if(states.get(i).getDemVotes() > states.get(i).getRepVotes()) {
 					votes[0] += states.get(i).getElectoralVotes();
